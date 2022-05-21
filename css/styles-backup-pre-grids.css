@@ -1,0 +1,199 @@
+/* Estilo del header*/ LISTO
+
+header {
+    background-color: #F9EBC8;
+    height: 80px;
+    position: sticky;
+    top: 0%;
+}
+
+.MenuPrincipal {
+    list-style: none;
+    width: 100%;
+    text-align: end;
+}
+
+.MenuPrincipal__item {
+    display: inline-block;
+    width: auto;
+    padding-right: 2%;
+    margin-top: 32px;
+}
+
+.MenuPrincipal__item a {
+    /* color: #A0BCC2;  alternativa de color más claro, ¡a definir a futuro!*/
+    color: #597980;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.MenuPrincipal__item a:hover {
+    color: black;
+}
+
+.logo {
+    margin-top: 10px;
+    float: left;
+}
+
+/* Estilo de las portadas de las páginas NO INDEX*/ LISTO
+
+.Encabezado {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    opacity: 1;
+}
+
+/* Estilo de la portada de NUESTRO PRÓPOSITO */
+.EncabezadoNuestroProposito {
+    background-image: url("../multimedia/images/Portada\ Nuestro\ Proposito.jpg");
+}
+
+/* Estilo de la portada de QUIENES SOMOS*/
+.EncabezadoQuienesSomos {
+    background-image: url("../multimedia/images/Portada\ Quienes\ Somos.jpg");
+}
+
+/* Estilo de la portada de SERVICIOS */
+.EncabezadoServicios {
+    background-image: url("../multimedia/images/Portada\ Servicios.jpg");
+}
+
+/* Estilo de la portada de NOTAS DE INTERES */
+.EncabezadoNotasDeInteres {
+    background-image: url("../multimedia/images/Portada\ notas\ de\ interés.jpg");
+}
+
+/* Estilo de la portada de CONTACTO */
+.EncabezadoContacto {
+    background-image: url("../multimedia/images/Portada\ contacto.jpg");
+}
+
+.Encabezado__Titulo {
+    font-size: 400%;
+    text-align: center;
+    padding: 10% 0% 0% 0%;
+}
+
+/* LA CUESTIÓN DEL "OPACITY" LO DEJÉ COMENTADO PORQUE NO DESCIFRÉ COMO HACER QUE SOLAMENTE LAS FOTOS SE HAGAN TRANSPARENTES Y EL CONTENIDO SIGA NORMAL */
+
+/* Estilo de la portada del INDEX */ LISTO
+
+.EncabezadoInicio {
+    background-image: url("../multimedia/images/Portada\ inicio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.EncabezadoInicio__Titulo {
+    font-size: 600%;
+    text-align: left;
+    padding: 20% 0% 0% 10%;
+}
+
+.EncabezadoInicio__Subtitulo {
+    font-size: 300%;
+    text-align: left;
+    padding: 2% 0% 0% 10%;
+}
+
+/* Estilo de foto de consultoria en el INDEX  */ LISTO
+
+#FotoConsultoria {
+    float: right;
+    padding: 6% 0% 5% 5%;
+    width: 450px;
+    height: 300px;
+}
+
+/* Estilo del main de todas las páginas*/ LISTO
+
+main {
+    background-color: #FEFBE7;
+}
+
+.Seccion {
+    font-size: 115%;
+    line-height: 200%;
+    padding: 3% 15% 5% 15%;
+    text-align: justify;
+}
+
+.Seccion__Titulo {
+    font-size: 200%;
+    text-align: center;
+    text-decoration: wavy;
+    padding: 1% 0% 3% 0%;
+}
+
+.Seccion__Subtitulo {
+    font-size: 150%;
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+}
+
+/* Estilo del FORMULARIO DE CONTACTO */ LISTO
+
+.CampoFormulario{
+    width: 25%;
+    font-family: "Basic Sans Serif";
+    font-size: 110%;
+    margin: 0% 0% 2% 0%;
+}
+
+input{
+    width: 25%;
+    font-family: "Basic Sans Serif";
+    font-size: 110%;
+}
+
+.BotonFormulario{
+    font-family: "Basic Sans Serif";
+    font-size: large;
+    border-radius: 12px;
+    width: 25%;
+    margin: 5px;
+    padding:10px;
+}
+
+/* Estilo del footer */
+/* 
+footer {
+    background-color: #A0BCC2;
+    height: 154px;
+}
+
+.RedesSociales {
+    float: left;
+    list-style: none;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+
+.RedSocial {
+    padding: 3% 0%;
+    color: #3e5054;
+    font-size: 90%;
+}
+
+.RedSocial a {
+    color: #3e5054;
+    font-size: 90%;
+}
+
+footer p {
+    text-align: right;
+    font-style: italic;
+    font-size: 80%;
+    padding-top: 20px;
+    padding-right: 10px;
+} */

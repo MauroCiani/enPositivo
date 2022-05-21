@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--configuración de la página-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - en Positivo</title>
+    <link rel="shortcut icon" href="../multimedia/images/Logo fondo transparente.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<!--Comienzo de la estructura y contenido visible de la página-->
+
+<body>
+
+    <!--Comienzo del menu de navegación por la página-->
+    <header>
+        <nav>
+            <ul class="MenuPrincipal">
+                <a href="../index.html">
+                    <img class="logo" src="../multimedia/images/Logo fondo transparente.png" alt="Logo en Positivo"
+                        height="60" width="60">
+                </a>
+                <li class="MenuPrincipal__item"><a href="../pages/nuestroproposito.html">Nuestro Propósito</a></li>
+                <li class="MenuPrincipal__item"><a href="../pages/quienessomos.html">¿Quiénes somos?</a></li>
+                <li class="MenuPrincipal__item"><a href="../pages/servicios.html">Servicios</a></li>
+                <li class="MenuPrincipal__item"><a href="../pages/notasdeinteres.html">Notas de interés</a></li>
+                <li class="MenuPrincipal__item"><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin del menu de navegación por la página-->
+
+    <!--Comienzo del contenido principal de la página-->
+    <main>
+
+        <!--Comienzo de la primera sección de la página: encabezado/portada-->
+        <section class="Encabezado EncabezadoContacto">
+            <h2 class="Encabezado__Titulo">Contacto</h2>
+        </section>
+        <!--Fin de la primera sección de la página: encabezado/portada-->
+
+        <!--Comienzo de la segunda seccion de la página: formulario de contacto-->
+        <section class="Seccion">
+            <h3 class="Seccion__Titulo">¡Dejanos tu consulta o comentario!</h3>
+            <form action="" method="post" enctype="">
+                <P><label for="nombre">Nombre:</label>
+                    <input class="CampoFormulario" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre">
+                </P>
+                <P>
+                    <label for="edad">Edad:</label>
+                    <input class="CampoFormulario" type="number" name="edad" id="edad" placeholder="Ingresá tu edad">
+                </P>
+                <P>
+                    <label for="email">E-mail:</label>
+                    <input class="CampoFormulario" type="email" name="email" id="email" placeholder="Ingresá tu e-mail">
+                </P>
+                <P>
+                    <label for="motivo consulta">Motivo de la consulta:</label>
+                    <select class="CampoFormulario" name="motivo consulta" id="motivo consulta">
+                        <option disabled selected>Indicá el motivo de tu consulta</option>
+                        <option value="contratar servicios">Me interesa contratar uno de los servicios</option>
+                        <option value="sumar al equipo de trabajo">Me interesa sumarme al equipo de trabajo</option>
+                        <option value="info servicios">Quiero obtener más información acerca de los servicios</option>
+                        <option value="otra consulta">Otra consulta</option>
+                    </select>
+                </P>
+                <P>
+                    <textarea class="CampoFormulario" name="mensaje de contacto" id="mensaje de contacto" cols="30" rows="10"
+                        placeholder="Escribí tu mensaje"></textarea>
+                </P>
+                <P>
+                    <input class="BotonFormulario" type="submit" value="Enviar mensaje">
+                </P>
+                <P>
+                    <input class="BotonFormulario" type="reset" value="Restablecer">
+                </P>
+            </form>
+            <!--Fin del formulario-->
+        </section>
+        <!--Fin de la segunda sección de la página: formulario de contacto-->
+    </main>
+    <!--Fin del contenido principal de la página-->
+
+    <!--Comienzo del footer-->
+    <footer>
+        <!--Links a redes sociales-->
+        <span>
+        <ul class="RedesSociales">
+            <li class="RedSocial">
+                <img src="../multimedia/images/LinkedIn logo.png" alt="LinkedIn logo" height="20" width="20">
+                <label for="link linkedin">LinkedIn:</label>
+                <a name="link linkedin" href="https://ar.linkedin.com/" target="blank">EnPositivo</a>
+            </li>
+            <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
+            <li class="RedSocial">
+                <img src="../multimedia/images/Instagram logo.jfif" alt="Instagram logo" height="20" width="20">
+                <label for="link instagram">Instagram:</label>
+                <a name="link instagram" target="blank" href="https://www.instagram.com/_enpositivo/">@_enpositivo</a>
+            </li>
+            <li class="RedSocial">
+                <img src="../multimedia/images/Facebook logo.png" alt="Facebook logo" height="20" width="20">
+                <label for="link facebook">Facebook:</label>
+                <a name="link facebook" href="https://www.facebook.com/" target="blank">EnPositivo</a>
+            </li>
+        </ul>
+        </span>
+        <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
+
+        <!--Info adicional acerca de la organización-->
+        <span>
+        <p>'en Positivo' todos los derechos reservados - 2022 -</p>
+        <p>Calle Falsa 560 Piso 20 Oficina 32 C.A.B.A.</p>
+        <p>Tel:541112131415</p>
+        </span>
+    </footer>
+    <!--Fin del footer-->
+</body>
+<!--Fin de la estructura y contenido visible de la página-->
+
+</html>
