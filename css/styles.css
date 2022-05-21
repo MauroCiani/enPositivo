@@ -51,7 +51,8 @@ nav {
 }
 
 .MenuPrincipal__item a:hover {
-    color: black;
+    /* color: black; */
+    color: red
 }
 
 /* Formato de la portada del INDEX */
