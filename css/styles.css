@@ -50,8 +50,12 @@ nav {
     font-size: 130%;
 }
 
+.MenuPrincipal__item a:focus {
+    color:red ;
+}
+
 .MenuPrincipal__item a:hover {
-    color: red;
+    color: black;
 }
 
 /* Formato de la portada del INDEX */
