@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="../multimedia/images/Logo fondo transparente.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <!--Comienzo de la estructura y contenido visible de la página-->
@@ -19,66 +21,81 @@
 
     <!--Comienzo del menu de navegación por la página-->
     <header>
-        <nav>
-            <ul class="MenuPrincipal">
-                <a href="../index.html">
-                    <img class="logo" src="../multimedia/images/Logo fondo transparente.png" alt="Logo en Positivo"
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #F9EBC8">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="mx-auto" src="../multimedia/images/Logo fondo transparente.png" alt="Logo en Positivo"
                         height="60" width="60">
                 </a>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="../pages/nuestroproposito.html">Nuestro Propósito</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="../pages/quienessomos.html">¿Quiénes somos?</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="../pages/notasdeinteres.html">Notas de interés</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link animate__animated animate__backInRight" href="../pages/nuestroproposito.html">Nuestro Propósito</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="../pages/quienessomos.html">¿Quiénes somos?</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="../pages/servicios.html">Servicios</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="../pages/notasdeinteres.html">Notas de interés</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="../pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!--Fin del menu de navegación por la página-->
 
     <!--Comienzo del contenido principal de la página-->
-    <main>
+    <main style="background-color: #FEFBE7" class="pb-3">
 
         <!--Comienzo de la primera sección de la página: encabezado/portada-->
-        <section class="Encabezado EncabezadoContacto">
-            <h2 class="Encabezado__Titulo animate__animated animate__backInDown">Contacto</h2>
+        <section class="Encabezado EncabezadoContacto d-flex flex-row align-items-center justify-content-center">
+            <h2 class="Encabezado__Titulo animate__animated animate__backInDown text-center" style="color:white">Contacto</h2>
         </section>
         <!--Fin de la primera sección de la página: encabezado/portada-->
 
         <!--Comienzo de la segunda seccion de la página: formulario de contacto-->
         <section class="Seccion">
-            <h3 class="Seccion__Titulo">¡Dejanos tu consulta o comentario!</h3>
-            <form action="" method="post" enctype="">
-                <P><label for="nombre">Nombre:</label>
-                    <input class="CampoFormulario" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre">
-                </P>
-                <P>
-                    <label for="edad">Edad:</label>
-                    <input class="CampoFormulario" type="number" name="edad" id="edad" placeholder="Ingresá tu edad">
-                </P>
-                <P>
-                    <label for="email">E-mail:</label>
-                    <input class="CampoFormulario" type="email" name="email" id="email" placeholder="Ingresá tu e-mail">
-                </P>
-                <P>
-                    <label for="motivo consulta">Motivo de la consulta:</label>
-                    <select class="CampoFormulario" name="motivo consulta" id="motivo consulta">
+            <h3 class="Seccion__Titulo h3 text-center mt-4">¡Dejanos tu consulta o comentario!</h3>
+            <form class="container p-4" action="" method="post" enctype="">
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label class="form-label" for="nombre">Nombre:</label>
+                        <input class="form-control CampoFormulario" type="text" name="nombre" id="nombre"
+                            placeholder="Ingresá tu nombre">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label class="form-label" for="edad">Edad:</label>
+                        <input class="form-control CampoFormulario" type="number" name="edad" id="edad" placeholder="Ingresá tu edad">
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label class="form-label" for="email">E-mail:</label>
+                        <input class="form-control CampoFormulario" type="email" name="email" id="email" placeholder="Ingresá tu e-mail">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="motivo consulta">Motivo de la consulta:</label>
+                    <select class="form-select CampoFormulario" name="motivo consulta" id="motivo consulta">
                         <option disabled selected>Indicá el motivo de tu consulta</option>
                         <option value="contratar servicios">Me interesa contratar uno de los servicios</option>
                         <option value="sumar al equipo de trabajo">Me interesa sumarme al equipo de trabajo</option>
                         <option value="info servicios">Quiero obtener más información acerca de los servicios</option>
                         <option value="otra consulta">Otra consulta</option>
                     </select>
-                </P>
-                <P>
-                    <textarea class="CampoFormulario" name="mensaje de contacto" id="mensaje de contacto" cols="30" rows="10"
-                        placeholder="Escribí tu mensaje"></textarea>
-                </P>
-                <P>
-                    <input class="BotonFormulario" type="submit" value="Enviar mensaje">
-                </P>
-                <P>
-                    <input class="BotonFormulario" type="reset" value="Restablecer">
-                </P>
+                </div>
+                <div class="mb-3">
+                    <textarea class="CampoFormulario form-control" name="mensaje de contacto" id="mensaje de contacto" cols="30"
+                        rows="10" placeholder="Escribí tu mensaje"></textarea>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="mb-3 me-3">
+                    <input class="BotonFormulario btn btn-lg" style="background-color:#F9EBC8" type="submit" value="Enviar mensaje">
+                </div>
+                <div class="mb-3 ms-3">
+                    <input class="BotonFormulario btn btn-sm" style="background-color:#F9EBC8" type="reset" value="Restablecer">
+                </div>
+                </div>
             </form>
             <!--Fin del formulario-->
         </section>
@@ -87,38 +104,45 @@
     <!--Fin del contenido principal de la página-->
 
     <!--Comienzo del footer-->
-    <footer>
+    <footer class="container-fluid" style="background-color: #A0BCC2">
         <!--Links a redes sociales-->
-        <span>
-        <ul class="RedesSociales">
-            <li class="RedSocial">
-                <img src="../multimedia/images/LinkedIn logo.png" alt="LinkedIn logo" height="20" width="20">
-                <label for="link linkedin">LinkedIn:</label>
-                <a name="link linkedin" href="https://ar.linkedin.com/" target="blank">EnPositivo</a>
-            </li>
+        <div class="row">
+            <span class="col-6 d-flex flex-column justify-content-center">
+                <ul class="RedesSociales list-unstyled d-flex flex-column align-items-start">
+                    <li class="RedSocial">
+                        <img src="../multimedia/images/LinkedIn logo.png" alt="LinkedIn logo" height="20" width="20">
+                        <label for="link linkedin">LinkedIn:</label>
+                        <a name="link linkedin" href="https://ar.linkedin.com/" target="blank">EnPositivo</a>
+                    </li>
+                    <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
+                    <li class="RedSocial">
+                        <img src="../multimedia/images/Instagram logo.jfif" alt="Instagram logo" height="20" width="20">
+                        <label for="link instagram">Instagram:</label>
+                        <a name="link instagram" target="blank"
+                            href="https://www.instagram.com/_enpositivo/">@_enpositivo</a>
+                    </li>
+                    <li class="RedSocial">
+                        <img src="../multimedia/images/Facebook logo.png" alt="Facebook logo" height="20" width="20">
+                        <label for="link facebook">Facebook:</label>
+                        <a name="link facebook" href="https://www.facebook.com/" target="blank">EnPositivo</a>
+                    </li>
+                </ul>
+            </span>
             <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
-            <li class="RedSocial">
-                <img src="../multimedia/images/Instagram logo.jfif" alt="Instagram logo" height="20" width="20">
-                <label for="link instagram">Instagram:</label>
-                <a name="link instagram" target="blank" href="https://www.instagram.com/_enpositivo/">@_enpositivo</a>
-            </li>
-            <li class="RedSocial">
-                <img src="../multimedia/images/Facebook logo.png" alt="Facebook logo" height="20" width="20">
-                <label for="link facebook">Facebook:</label>
-                <a name="link facebook" href="https://www.facebook.com/" target="blank">EnPositivo</a>
-            </li>
-        </ul>
-        </span>
-        <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
 
-        <!--Info adicional acerca de la organización-->
-        <span>
-        <p>'en Positivo' todos los derechos reservados - 2022 -</p>
-        <p>Calle Falsa 560 Piso 20 Oficina 32 C.A.B.A.</p>
-        <p>Tel:541112131415</p>
-        </span>
+            <!--Info adicional acerca de la organización-->
+            <span class="col-6 d-flex flex-column align-items-start">
+                <p>'en Positivo' todos los derechos reservados-2022-</p>
+                <p>Calle Falsa 560 Piso 20 Oficina 32 C.A.B.A.</p>
+                <p>Tel:541112131415</p>
+            </span>
+        </div>
     </footer>
     <!--Fin del footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 <!--Fin de la estructura y contenido visible de la página-->
 

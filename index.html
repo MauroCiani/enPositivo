@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="./multimedia/images/Logo fondo transparente.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <!--Comienzo de la estructura y contenido visible de la página-->
@@ -19,60 +21,73 @@
 
     <!--Comienzo del menu de navegación por la página-->
     <header>
-        <nav>
-            <ul class="MenuPrincipal">
-                <a href="./index.html">
-                    <img class="logo" src="./multimedia/images/Logo fondo transparente.png" alt="Logo en Positivo"
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #F9EBC8">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img class="mx-auto" src="./multimedia/images/Logo fondo transparente.png" alt="Logo en Positivo"
                         height="60" width="60">
                 </a>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="./pages/nuestroproposito.html">Nuestro Propósito</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="./pages/quienessomos.html">¿Quiénes somos?</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="./pages/servicios.html">Servicios</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="./pages/notasdeinteres.html">Notas de interés</a></li>
-                <li class="MenuPrincipal__item animate__animated animate__bounce"><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link animate__animated animate__backInRight" href="./pages/nuestroproposito.html">Nuestro Propósito</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="./pages/quienessomos.html">¿Quiénes somos?</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="./pages/servicios.html">Servicios</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="./pages/notasdeinteres.html">Notas de interés</a>
+                        <a class="nav-link animate__animated animate__backInRight" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!--Fin del menu de navegación por la página-->
 
     <!--Comienzo del contenido principal del index-->
-    <main>
+    <main style="background-color: #FEFBE7" class="pb-3">
 
         <!--Comienzo de la primera sección del index: encabezado/portada-->
-        <section class="EncabezadoInicio">
+        <section class="EncabezadoInicio d-flex flex-column justify-content-center">
             <span>
-                <h1 class="EncabezadoInicio__Titulo animate__animated animate__backInLeft">en Positivo</h1>
+                <h1 class="display-1 ms-3 animate__animated animate__backInLeft">en Positivo</h1>
             </span>
             <span>
-                <h2 class="EncabezadoInicio__Subtitulo animate__animated animate__backInUp">de Ideas a planes en acción</h2>
+                <h2 class="h2 ms-4 animate__animated animate__backInUp">de Ideas a planes en acción
+                </h2>
             </span>
         </section>
         <!--Fin de la primera sección del index: encabezao/portada-->
 
         <!--Comienzo de la segunda sección del index-->
-        <section class="Seccion">
-            <h3 class="Seccion__Titulo">¡Bienvenido!</h3>
-            <p>Pensamos este espacio como un lugar de encuentro con personas y organizaciones. Un encuentro para
+        <section class="Seccion container">
+            <h3 class="Seccion__Titulo h3 text-center my-4">¡Bienvenido!</h3>
+            <p class="lh-lg">Pensamos este espacio como un lugar de encuentro con personas y organizaciones. Un encuentro para
                 trabajar y prosperar haciendo algo que nos apasiona, compartiendo miradas, capacidades, preguntas y
                 reconociéndonos mutuamente valiosos.</p>
-            <p>Nuestra mirada está puesta en construir nuevas opciones que resulten en expansión de posibilidades.</p>
-            <p>Sabiendo que las organizaciones transitan diferentes momentos, cada una con sus características, este
+            <p class="lh-lg">Nuestra mirada está puesta en construir nuevas opciones que resulten en expansión de posibilidades.</p>
+            <p class="lh-lg">Sabiendo que las organizaciones transitan diferentes momentos, cada una con sus características, este
                 sitio esta pensado para que establezcamos contacto y poder acompañarte en tus metas.</p>
-            <p>Te invitamos a recorrer este sitio que ofrece preguntas, reflexiones, lecturas, servicios en red con
+            <p class="lh-lg">Te invitamos a recorrer este sitio que ofrece preguntas, reflexiones, lecturas, servicios en red con
                 diversos profesionales para conectar con vos y tu organización, de la forma que sea posible en cada
                 momento de tu trayecto y el nuestro.</p>
         </section>
         <!--Fin de la segunda sección del index-->
 
         <!--Comienzo de la tercera sección del index-->
-        <section class="Seccion_Multimedia_Lateral">
-            <h3 class="Seccion__Titulo">Consultoría para los desafíos de hoy</h3>
-            <p class="Seccion__Subtitulo">Trabajamos para Organizaciones y PyMEs que gestionan su negocio atentas a su
+        <section class="Seccion_Multimedia_Lateral container">
+            <h3 class="Seccion__Titulo h4 text-center mt-5 mb-4">Consultoría para los desafíos de hoy</h3>
+            <p class="Seccion__Subtitulo h5 text-center mb-5 lh-lg">Trabajamos para Organizaciones y PyMEs que gestionan su
+                negocio atentas a su
                 sostenibilidad económica,
                 tanto como, a su impacto social y ambiental.</p>
-            <div>
-                <img id="FotoConsultoria" src="./multimedia/images/Consultoria inicio.jfif" alt="Consultoria">
-                <ul id="TextoConsultoria">
+            <div class="row">
+                <img id="FotoConsultoria" src="./multimedia/images/Foto consultoría v2.jpg" alt="Consultoria"
+                    class="col-md-4 col-lg-4 col-xl-3 col-xxl-2 mb-3">
+                <ul id="TextoConsultoria"
+                    class=" d-inline-flex flex-column justify-content-between col-md-8 col-lg-8 col-xl-9 col-xxl-10 ps-3">
                     <li>Proponemos la Metodología y Herramientas para conseguir el necesario compromiso con las
                         propuestas
                         que se lleven adelante
@@ -104,39 +119,46 @@
     <!--Fin del contenido principal del index -->
 
     <!--Comienzo del footer-->
-    <footer>
+    <footer class="container-fluid" style="background-color: #A0BCC2">
         <!--Links a redes sociales-->
-        <span>
-            <ul class="RedesSociales">
-                <li class="RedSocial">
-                    <img src="./multimedia/images/LinkedIn logo.png" alt="LinkedIn logo" height="20" width="20">
-                    <label for="link linkedin">LinkedIn:</label>
-                    <a name="link linkedin" href="https://ar.linkedin.com/" target="blank">EnPositivo</a>
-                </li>
-                <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
-                <li class="RedSocial">
-                    <img src="./multimedia/images/Instagram logo.jfif" alt="Instagram logo" height="20" width="20">
-                    <label for="link instagram">Instagram:</label>
-                    <a name="link instagram" target="blank"
-                        href="https://www.instagram.com/_enpositivo/">@_enpositivo</a>
-                </li>
-                <li class="RedSocial">
-                    <img src="./multimedia/images/Facebook logo.png" alt="Facebook logo" height="20" width="20">
-                    <label for="link facebook">Facebook:</label>
-                    <a name="link facebook" href="https://www.facebook.com/" target="blank">EnPositivo</a>
-                </li>
-            </ul>
-        </span>
-        <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
+        <div class="row">
+            <span class="col-6 d-flex flex-column justify-content-center">
+                <ul class="RedesSociales list-unstyled d-flex flex-column align-items-start">
+                    <li class="RedSocial">
+                        <img src="./multimedia/images/LinkedIn logo.png" alt="LinkedIn logo" height="20" width="20">
+                        <label for="link linkedin">LinkedIn:</label>
+                        <a name="link linkedin" href="https://ar.linkedin.com/" target="blank">EnPositivo</a>
+                    </li>
+                    <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
+                    <li class="RedSocial">
+                        <img src="./multimedia/images/Instagram logo.jfif" alt="Instagram logo" height="20" width="20">
+                        <label for="link instagram">Instagram:</label>
+                        <a name="link instagram" target="blank"
+                            href="https://www.instagram.com/_enpositivo/">@_enpositivo</a>
+                    </li>
+                    <li class="RedSocial">
+                        <img src="./multimedia/images/Facebook logo.png" alt="Facebook logo" height="20" width="20">
+                        <label for="link facebook">Facebook:</label>
+                        <a name="link facebook" href="https://www.facebook.com/" target="blank">EnPositivo</a>
+                    </li>
+                </ul>
+            </span>
+            <!--(En un futuro debería dirigir hacia la cuenta de la empresa)-->
 
-        <!--Info adicional acerca de la organización-->
-        <span>
-            <p>'en Positivo' todos los derechos reservados - 2022 -</p>
-            <p>Calle Falsa 560 Piso 20 Oficina 32 C.A.B.A.</p>
-            <p>Tel:541112131415</p>
-        </span>
+            <!--Info adicional acerca de la organización-->
+            <span class="col-6 d-flex flex-column align-items-start">
+                <p>'en Positivo' todos los derechos reservados-2022-</p>
+                <p>Calle Falsa 560 Piso 20 Oficina 32 C.A.B.A.</p>
+                <p>Tel:541112131415</p>
+            </span>
+        </div>
     </footer>
     <!--Fin del footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
 </body>
 <!--Fin de la estructura y contenido visible de la página-->
 

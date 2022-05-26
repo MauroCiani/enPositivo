@@ -1,288 +1,49 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "Basic Sans Serif";
-    src: url("../fonts/basic_sans_serif_7.ttf");
-}
-
-
-/*Maquetado de la página INDEX con GRIDS*/
-
-body {
-    font-family: "Basic Sans Serif";
-    background-color: #FEFBE7;
-    display: grid;
-    grid-template-areas:
-        "menu"
-        "portada"
-        "seccion"
-        "footer";
-    grid-template-rows: max-content max-content max-content max-content;
-    margin: 0%;
-}
-
-/* Formato del menú de navegación */
-
-nav {
-    grid-area: menu;
-    background-color: #F9EBC8;
-    /*     position: sticky;
-    top: 0%; */
-}
-
-.MenuPrincipal {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.MenuPrincipal__item a {
-    /* color: #A0BCC2;  alternativa de color más claro, ¡a definir a futuro!*/
-    color: #597980;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 130%;
-}
-
-.MenuPrincipal__item a:hover {
-    color: rgb(5, 5, 5);
-}
-
 /* Formato de la portada del INDEX */
-
 .EncabezadoInicio {
-    grid-area: portada;
     background-image: url("../multimedia/images/Portada\ inicio.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100vh;
-}
-
-.EncabezadoInicio__Titulo {
-    font-size: 600%;
-    padding-left: 5%;
-    width: max-content;
-}
-
-.EncabezadoInicio__Subtitulo {
-    font-size: 300%;
-    padding-left: 5%;
-    width: max-content;
-}
-
-/* Formato de las demás portadas*/
-
-.Encabezado {
-    grid-area: portada;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.Encabezado__Titulo {
-    font-size: 400%;
+    height: 90vh;
 }
 
 /* Estilo de la portada de NUESTRO PRÓPOSITO */
 .EncabezadoNuestroProposito {
-    background-image: url("../multimedia/images/Portada\ Nuestro\ Proposito.jpg");
-    /*     opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)) ,url("../multimedia/images/Portada\ Nuestro\ Proposito.jpg");
 }
 
 /* Estilo de la portada de QUIENES SOMOS*/
 .EncabezadoQuienesSomos {
-    background-image: url("../multimedia/images/Portada\ Quienes\ Somos.jpg");
-    /*     opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Quienes\ Somos.jpg");
 }
 
 /* Estilo de la portada de SERVICIOS */
 .EncabezadoServicios {
-    background-image: url("../multimedia/images/Portada\ Servicios.jpg");
-    /*     opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Servicios.jpg");
 }
 
 /* Estilo de la portada de NOTAS DE INTERES */
 .EncabezadoNotasDeInteres {
-    background-image: url("../multimedia/images/Portada\ notas\ de\ interés.jpg");
-    /*     opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ notas\ de\ interés.jpg");
 }
 
 /* Estilo de la portada de CONTACTO */
 .EncabezadoContacto {
-    background-image: url("../multimedia/images/Portada\ contacto.jpg");
-    /*     opacity: 0.5; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ contacto.jpg");
 }
 
-/* Formato de las secciones*/
-
-.Seccion {
-    grid-area: seccion;
-    text-align: center;
-    font-size: 115%;
-    line-height: 200%;
-    padding: 3% 15% 5% 15%;
+.Encabezado {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
 }
 
-Seccion p{
-    font-size: 115%;
+.Encabezado__Titulo{
+    font-size: 5rem;
 }
 
-.Seccion__Titulo {
-    font-size: 200%;
-    text-align: center;
-    text-decoration: wavy;
-    padding: 0% 0% 1% 0%;
-}
-
-.Seccion__Subtitulo {
-    font-size: 130%;
-    text-align: center;
-    padding: 0% 0% 3% 0%;
-}
-
-.Seccion_Multimedia_Lateral div {
-    display: grid;
-    grid-template-areas: "texto multimedia";
-    grid-template-columns: 1fr 1fr;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 100px;
-    justify-items: center;
-    align-items: center;
-    padding: 0% 5% 0% 5%;
-}
-
-.Seccion_Multimedia_Lateral div ul {
-    grid-area: texto;
-    list-style: none;
-    font-size: 115%;
-    line-height: 200%
-}
-
-.Seccion_Multimedia_Lateral div p {
-    grid-area: texto;
-    list-style: none;
-    font-size: 115%;
-    line-height: 200%
-}
-
-#Video_IG_Quienes_Somos {
-    grid-area: multimedia;
-}
-
-.Seccion_Multimedia_Lateral div img {
-    grid-area: multimedia;
-    width: 450px;
-    height: 350px;
-}
-
-/* Estilo del FORMULARIO DE CONTACTO */
-
-.CampoFormulario {
-    width: max-content;
-    font-family: "Basic Sans Serif";
-    font-size: 110%;
-    margin: 0% 0% 2% 0%;
-}
-
-input {
-    width: 25%;
-    font-family: "Basic Sans Serif";
-    font-size: 110%;
-}
-
-.BotonFormulario {
-    font-family: "Basic Sans Serif";
-    font-size: large;
-    border-radius: 12px;
-    width: 25%;
-    margin: 5px;
-    padding: 10px;
-}
-
-/* Formato del footer */
-
-footer {
-    grid-area: footer;
-    background-color: #A0BCC2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.RedesSociales {
-    list-style: none;
-}
-
-.RedSocial {
-    color: #3e5054;
-    font-size: 90%;
-}
-
-.RedSocial a {
-    color: #3e5054;
-    font-size: 90%;
-}
-
-footer p {
-    font-style: italic;
-    font-size: 80%;
-}
-
-/* MEDIA QUERY PARA MOBILE*/
-
-@media screen and (max-width:320px) {
-    
-    .MenuPrincipal {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .EncabezadoInicio__Titulo {
-        font-size: 300%;
-        padding-left: 5%;
-        width: max-content;
-    }
-    
-    .EncabezadoInicio__Subtitulo {
-        font-size: 150%;
-        padding-left: 5%;
-        width: max-content;
-    }
-
-    .Encabezado__Titulo {
-        font-size: 200%;
-    }
-
-    .Seccion_Multimedia_Lateral div {
-        grid-template-areas: "texto" "multimedia";
-        row-gap: 15px;
-        flex-direction: column-reverse;
-    }
-
-    footer {
-        flex-direction: column;
-    }
+.btn:hover{
+    background-color: #bba774;
+    background-color: black;
 }
