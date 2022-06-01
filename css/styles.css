@@ -1,49 +1,41 @@
+@charset "UTF-8";
 /* Formato de la portada del INDEX */
 .EncabezadoInicio {
-    background-image: url("../multimedia/images/Portada\ inicio.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 90vh;
-}
+  background-image: url("../multimedia/images/Portada inicio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
 
 /* Estilo de la portada de NUESTRO PRÓPOSITO */
 .EncabezadoNuestroProposito {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)) ,url("../multimedia/images/Portada\ Nuestro\ Proposito.jpg");
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada Nuestro Proposito.jpg"); }
 
 /* Estilo de la portada de QUIENES SOMOS*/
 .EncabezadoQuienesSomos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Quienes\ Somos.jpg");
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada Quienes Somos.jpg"); }
 
 /* Estilo de la portada de SERVICIOS */
 .EncabezadoServicios {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Servicios.jpg");
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada Servicios.jpg"); }
 
 /* Estilo de la portada de NOTAS DE INTERES */
 .EncabezadoNotasDeInteres {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ notas\ de\ interés.jpg");
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada notas de interés.jpg"); }
 
 /* Estilo de la portada de CONTACTO */
 .EncabezadoContacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ contacto.jpg");
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada contacto.jpg"); }
 
 .Encabezado {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh; }
 
-.Encabezado__Titulo{
-    font-size: 5rem;
-}
+.Encabezado__Titulo {
+  font-size: 5rem; }
 
-.btn:hover{
-    background-color: #bba774;
-    background-color: black;
-}
+.btn:hover {
+  background-color: #bba774;
+  background-color: black; }
