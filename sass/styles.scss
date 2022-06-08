@@ -1,52 +1,79 @@
-/* Formato de la portada del INDEX */
-.EncabezadoInicio {
-    background-image: url("../multimedia/images/Portada\ inicio.jpg");
+/* Pre-Formato del fondo de TODOS los encabezados */
+.Encabezados{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+/* Formato del encabezado del INDEX */
+.EncabezadoInicio {
+    @extend .Encabezados;
+    @include size (auto,100vh);
+    background-image: url("../multimedia/images/Portada\ inicio.jpg");
+}
+
+/* Formato del encabezado del todas las otras PAGES */
+.EncabezadoPages {
+    @extend .Encabezados;
+    @include size (auto,40vh);
 }
 
 /* Estilo de la portada de NUESTRO PRÓPOSITO */
 .EncabezadoNuestroProposito {
+    @extend .EncabezadoPages;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)) ,url("../multimedia/images/Portada\ Nuestro\ Proposito.jpg");
 }
 
 /* Estilo de la portada de QUIENES SOMOS*/
 .EncabezadoQuienesSomos {
+    @extend .EncabezadoPages;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Quienes\ Somos.jpg");
 }
 
 /* Estilo de la portada de SERVICIOS */
 .EncabezadoServicios {
+    @extend .EncabezadoPages;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ Servicios.jpg");
 }
 
 /* Estilo de la portada de NOTAS DE INTERES */
 .EncabezadoNotasDeInteres {
+    @extend .EncabezadoPages;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ notas\ de\ interés.jpg");
 }
 
 /* Estilo de la portada de CONTACTO */
 .EncabezadoContacto {
+    @extend .EncabezadoPages;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada\ contacto.jpg");
 }
 
-.Encabezado {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 40vh;
-}
-
-.Encabezado__Titulo{
+.Encabezado__Titulo {
     font-size: 5rem;
 }
 
 .btn{
 
     &:hover{
-        background-color: #bba774;
-        background-color: black;
+        background-color: #ccb781;
+    }
+}
+/* Mapa para el fondo de cada uno de los servicios EN PESTAÑA 'SERVICIOS' */
+
+$servicios: (
+    1: #bba111,
+    2: #bbb333,
+    3: #bba777,
+    4: #bbb888,
+);
+
+@each $servicio, $color in $servicios{
+    .Servicio__#{$servicio} {
+        background-color: $color;
     }
 }

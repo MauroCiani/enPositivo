@@ -1,11 +1,20 @@
 @charset "UTF-8";
-/* Formato de la portada del INDEX */
-.EncabezadoInicio {
-  background-image: url("../multimedia/images/Portada inicio.jpg");
+/* Pre-Formato del fondo de TODOS los encabezados */
+.Encabezados, .EncabezadoInicio, .EncabezadoPages, .EncabezadoNuestroProposito, .EncabezadoQuienesSomos, .EncabezadoServicios, .EncabezadoNotasDeInteres, .EncabezadoContacto {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
+
+/* Formato del encabezado del INDEX */
+.EncabezadoInicio {
+  width: auto;
+  height: 100vh;
+  background-image: url("../multimedia/images/Portada inicio.jpg"); }
+
+/* Formato del encabezado del todas las otras PAGES */
+.EncabezadoPages, .EncabezadoNuestroProposito, .EncabezadoQuienesSomos, .EncabezadoServicios, .EncabezadoNotasDeInteres, .EncabezadoContacto {
+  width: auto;
+  height: 40vh; }
 
 /* Estilo de la portada de NUESTRO PRÓPOSITO */
 .EncabezadoNuestroProposito {
@@ -27,15 +36,21 @@
 .EncabezadoContacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../multimedia/images/Portada contacto.jpg"); }
 
-.Encabezado {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 40vh; }
-
 .Encabezado__Titulo {
   font-size: 5rem; }
 
 .btn:hover {
-  background-color: #bba774;
-  background-color: black; }
+  background-color: #ccb781; }
+
+/* Mapa para el fondo de cada uno de los servicios EN PESTAÑA 'SERVICIOS' */
+.Servicio__1 {
+  background-color: #bba111; }
+
+.Servicio__2 {
+  background-color: #bbb333; }
+
+.Servicio__3 {
+  background-color: #bba777; }
+
+.Servicio__4 {
+  background-color: #bbb888; }
