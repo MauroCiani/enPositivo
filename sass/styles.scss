@@ -63,13 +63,14 @@
         background-color: #ccb781;
     }
 }
+
 /* Mapa para el fondo de cada uno de los servicios EN PESTAÑA 'SERVICIOS' */
 
 $servicios: (
-    1: #bba111,
-    2: #bbb333,
-    3: #bba777,
-    4: #bbb888,
+    1: #eee899,
+    2: #eee699,
+    3: #eee499,
+    4: #eee299,
 );
 
 @each $servicio, $color in $servicios{
