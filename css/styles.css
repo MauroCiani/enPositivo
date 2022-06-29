@@ -39,18 +39,47 @@
 .Encabezado__Titulo {
   font-size: 5rem; }
 
-.btn:hover {
-  background-color: #ccb781; }
+nav .btn:hover {
+  /* background-color: #ccb781; */
+  background-color: #FB7968; }
 
 /* Mapa para el fondo de cada uno de los servicios EN PESTAÑA 'SERVICIOS' */
 .Servicio__1 {
-  background-color: #eee899; }
+  background-color: #F1D596; }
 
 .Servicio__2 {
-  background-color: #eee699; }
+  background-color: #F1D596; }
 
 .Servicio__3 {
-  background-color: #eee499; }
+  background-color: #F1D596; }
 
 .Servicio__4 {
-  background-color: #eee299; }
+  background-color: #F1D596; }
+
+/* Colores del fondo del menú (nav), del cuerpo (main) y footer de todas las páginas */
+nav {
+  /* background-color: #F9EBC8; */
+  background-color: #F9C593; }
+
+main {
+  background-color: #FAFAD4;
+  padding-bottom: 1rem; }
+
+footer {
+  background-color: #89B2A2; }
+
+.redsocial {
+  color: black; }
+
+.nota_interes {
+  background-color: #fbeab7; }
+
+.boton_leer_nota {
+  background-color: #F1D596;
+  padding: 0.5rem;
+  border-radius: 0.5rem; }
+  .boton_leer_nota a {
+    text-decoration: none;
+    color: black; }
+    .boton_leer_nota a:hover {
+      color: #CA842F; }
