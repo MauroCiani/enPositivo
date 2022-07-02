@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Basic Sans Serif";
+    src: url("../fonts/basic_sans_serif_7.ttf");
+}
+
+@font-face {
+    font-family: "Times";
+    src: url("../fonts/timess_.ttf");
+}
+
+body {
+    font-family: "Times" !important;
+
+    p {
+        font-size: large;
+    }
+
+    li {
+        font-size: large;
+    }
+}

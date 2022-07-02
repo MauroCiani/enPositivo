@@ -1,3 +1,5 @@
+@import "tipografía";
+
 /* Pre-Formato del fondo de TODOS los encabezados */
 .Encabezados{
     background-repeat: no-repeat;
@@ -55,8 +57,10 @@
 
 .Encabezado__Titulo {
     font-size: 5rem;
+    color: white;
 }
 
+/* Estilo botones del menú*/
 nav{
 
     .btn{
@@ -71,10 +75,6 @@ nav{
 /* Mapa para el fondo de cada uno de los servicios EN PESTAÑA 'SERVICIOS' */
 
 $servicios: (
-/*     1: #eee899,
-    2: #eee699,
-    3: #eee499,
-    4: #eee299, */
     1: #F1D596,
     2: #F1D596,
     3: #F1D596,
@@ -90,7 +90,6 @@ $servicios: (
 /* Colores del fondo del menú (nav), del cuerpo (main) y footer de todas las páginas */
 
 nav {
-    /* background-color: #F9EBC8; */
     background-color: #F9C593;
 }
 
@@ -104,9 +103,13 @@ footer{
     background-color: #89B2A2;
 }
 
+/* Estilo del color del link a las redes sociales */
+
 .redsocial {
     color: black;
 }
+
+/* Estilo de cada entrada del blog publicada */
 
 .nota_interes{
     background-color: #fbeab7;
